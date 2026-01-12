@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty & Accessories Store</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= HEADER / MENU ================= -->
+<header class="header">
+  <div class="container nav">
+
+    <div class="logo">
+      <span>Beauty</span>Store
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a href="https://wa.me/255700000000" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Order Now
+    </a>
+
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <h1>Enhance Your Beauty,<br><span>Define Your Style</span></h1>
+      <p>
+        Discover premium cosmetics and accessories designed for modern, confident women.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#shop" class="btn-primary">Shop Now</a>
+        <a href="https://wa.me/255700000000" class="btn-outline">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Cosmetics">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CATEGORIES SECTION ================= -->
+<section class="categories">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Shop by Category</h2>
+      <p>Find your perfect beauty and accessories match</p>
+    </div>
+
+    <div class="categories-grid">
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Cosmetics">
+        <div class="category-info">
+          <h3>Cosmetics</h3>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a" alt="Earrings">
+        <div class="category-info">
+          <h3>Earrings</h3>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watches">
+        <div class="category-info">
+          <h3>Watches</h3>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1618354691373-9ec5c56c7b3d" alt="Bracelets">
+        <div class="category-info">
+          <h3>Bracelets</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section class="products" id="shop">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <p>Best selling beauty & accessories you’ll love</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Lipstick">
+        </div>
+
+        <div class="product-info">
+          <h3>Luxury Matte Lipstick</h3>
+          <div class="rating">
+            ★★★★☆ <span>(4.5)</span>
+          </div>
+          <div class="price">TZS 25,000</div>
+
+          <button class="order-btn"
+            onclick="orderWhatsApp(
+              'Luxury Matte Lipstick',
+              'TZS 25,000',
+              'https://images.unsplash.com/photo-1596462502278-27bfdc403348'
+            )">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a" alt="Earrings">
+        </div>
+
+        <div class="product-info">
+          <h3>Elegant Gold Earrings</h3>
+          <div class="rating">
+            ★★★★★ <span>(5.0)</span>
+          </div>
+          <div class="price">TZS 40,000</div>
+
+          <button class="order-btn"
+            onclick="orderWhatsApp(
+              'Elegant Gold Earrings',
+              'TZS 40,000',
+              'https://images.unsplash.com/photo-1611591437281-460bfbe1220a'
+            )">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch">
+        </div>
+
+        <div class="product-info">
+          <h3>Classic Ladies Watch</h3>
+          <div class="rating">
+            ★★★★☆ <span>(4.6)</span>
+          </div>
+          <div class="price">TZS 85,000</div>
+
+          <button class="order-btn"
+            onclick="orderWhatsApp(
+              'Classic Ladies Watch',
+              'TZS 85,000',
+              'https://images.unsplash.com/photo-1523275335684-37898b6baf30'
+            )">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1618354691373-9ec5c56c7b3d" alt="Bracelet">
+        </div>
+
+        <div class="product-info">
+          <h3>Minimal Gold Bracelet</h3>
+          <div class="rating">
+            ★★★★★ <span>(5.0)</span>
+          </div>
+          <div class="price">TZS 30,000</div>
+
+          <button class="order-btn"
+            onclick="orderWhatsApp(
+              'Minimal Gold Bracelet',
+              'TZS 30,000',
+              'https://images.unsplash.com/photo-1618354691373-9ec5c56c7b3d'
+            )">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ORDER STEPS ================= -->
+<section class="order-steps">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>How to Order</h2>
+      <p>Simple steps to get your favorite products</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step-card">
+        <div class="step-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>Choose Product</h3>
+        <p>Browse our collection and select the product you love.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon">
+          <i class="fas fa-comment-dots"></i>
+        </div>
+        <h3>Chat on WhatsApp</h3>
+        <p>Click order and chat with us instantly on WhatsApp.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Confirm Details</h3>
+        <p>Confirm price, color, availability and delivery location.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>Fast Delivery</h3>
+        <p>We deliver your order safely and quickly to your location.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why-us">
+  <div class="container why-us-content">
+
+    <!-- LEFT SIDE -->
+    <div class="why-us-left">
+      <span class="small-title">Why Choose Us</span>
+      <h2>More Than Just a Beauty Store</h2>
+      <p class="why-desc">
+        We focus on quality, trust and customer satisfaction.  
+        Every product is carefully selected to give you confidence and style.
+      </p>
+
+      <div class="why-list">
+        <div class="why-item">
+          <i class="fas fa-check-circle"></i>
+          <span>100% Original & Quality Products</span>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Fast & Reliable Delivery</span>
+        </div>
+        <div class="why-item">
+          <i class="fab fa-whatsapp"></i>
+          <span>Instant Support via WhatsApp</span>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-lock"></i>
+          <span>Trusted by Hundreds of Customers</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="why-us-right">
+
+      <div class="why-card">
+        <i class="fas fa-gem"></i>
+        <h3>Premium Selection</h3>
+        <p>Only high-quality cosmetics and accessories are listed.</p>
+      </div>
+
+      <div class="why-card">
+        <i class="fas fa-star"></i>
+        <h3>Top Rated Products</h3>
+        <p>Our products are loved and rated by real customers.</p>
+      </div>
+
+      <div class="why-card">
+        <i class="fas fa-heart"></i>
+        <h3>Customer First</h3>
+        <p>Your satisfaction is our top priority.</p>
+      </div>
+
+      <div class="why-card">
+        <i class="fas fa-globe"></i>
+        <h3>Modern Shopping</h3>
+        <p>International e-commerce experience via WhatsApp.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>What Our Customers Say</h2>
+      <p>Real reviews from happy customers</p>
+    </div>
+
+    <div class="testimonial-slider">
+
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            I absolutely love the quality of the products.  
+            Fast delivery and very friendly support on WhatsApp.
+          </p>
+          <div class="review-user">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+            <div>
+              <h4>Amina J.</h4>
+              <span>Dar es Salaam</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            Elegant accessories and original cosmetics.  
+            Ordering through WhatsApp was super easy.
+          </p>
+          <div class="review-user">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+            <div>
+              <h4>Neema K.</h4>
+              <span>Arusha</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★☆</div>
+          <p class="review-text">
+            Beautiful packaging and quality products.  
+            I will definitely order again.
+          </p>
+          <div class="review-user">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+            <div>
+              <h4>Joyce M.</h4>
+              <span>Mwanza</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="testimonial-controls">
+        <button onclick="prevTestimonial()">❮</button>
+        <button onclick="nextTestimonial()">❯</button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+<a
+  href="https://wa.me/255700000000"
+  target="_blank"
+  class="whatsapp-float"
+  aria-label="Chat with us on WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        We are a modern beauty & accessories store offering premium cosmetics,
+        watches, earrings and bracelets. Our goal is to provide quality,
+        elegance and confidence to every customer.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="footer-col">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Cosmetics</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">Bracelets</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <ul class="footer-contact">
+        <li><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</li>
+        <li><i class="fas fa-phone"></i> +255 700 000 000</li>
+        <li><i class="fas fa-envelope"></i> info@beautystore.com</li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>
+      © 2026 Beauty & Accessories Store. All Rights Reserved.  
+      Designed with ❤️ by 44 Design
+    </p>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
